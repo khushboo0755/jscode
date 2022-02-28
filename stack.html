@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> React JS App</title>
+	</head>
+	<body>
+		<h2>call stack</h2>
+		<script>
+			function one(){
+				two();
+			}
+			function two(){
+				three();
+			}
+			function three(){
+				console.log('hi');
+				return 'hello';
+			}
+			debugger;
+			one();
+		
+	</script>	
+		</body>
+	</html>
